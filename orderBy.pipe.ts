@@ -1,3 +1,12 @@
+/*
+* Usage in HTML:
+* *ngFor="let item of myArr | orderBy:'Name':true:false:false:false"
+*
+* Usage in Typescript:
+* let myArr = Sorter.sort(myRawData, 'Name', false);
+*/
+
+
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
